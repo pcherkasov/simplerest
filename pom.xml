@@ -32,7 +32,7 @@
         <tomcat7-maven-plugin.version>2.2</tomcat7-maven-plugin.version>
 
         <!-- JSON converter version-->
-        <jackson.version>2.9.4</jackson.version>
+        <jackson.version>2.9.8</jackson.version>
 
         <failOnMissingWebXml>false</failOnMissingWebXml>
     </properties>

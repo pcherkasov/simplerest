@@ -1,7 +1,6 @@
 package com.godel.java.task.dao;
 
 import com.godel.java.task.dto.Employee;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
@@ -26,10 +25,8 @@ public class EmployeeDaoSpringJdbcImpl implements EmployeeDao {
     private static final String UPDATE_EMPLOYEE = "UPDATE employee SET first_name = ?, last_name = ?, department_id = ?, job_title = ?, gender = ?, date_of_birdth = ? WHERE ? = employee_id";
     private static final String DELETE_EMPLOYEE = "DELETE FROM employee WHERE employee_id = ?";
 
-
     private JdbcTemplate jdbcTemplate;
 
-    @Autowired
     public EmployeeDaoSpringJdbcImpl(DataSource dataSource) {
         this.jdbcTemplate = new JdbcTemplate(dataSource);
     }

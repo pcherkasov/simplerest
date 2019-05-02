@@ -22,4 +22,4 @@ INSERT INTO employee
                  ('John', 'MALE'),
                  ('Robert', 'MALE'),
                  ('Tanya', 'FEMALE'),
-                 ('Kris', 'MALE');
+                 ('Cris', 'MALE');
